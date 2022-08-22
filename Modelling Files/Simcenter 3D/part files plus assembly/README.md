@@ -1,5 +1,3 @@
-oc)  357 Bytes
-
 Inital part files of the AFPM that can be assembled to create various AFPM types. 
 
 Unfortuantely until Magnet is incorporated into simcenter 3D the assembled file cannot be electromagnetically simulated in Simcenter 3D. 
