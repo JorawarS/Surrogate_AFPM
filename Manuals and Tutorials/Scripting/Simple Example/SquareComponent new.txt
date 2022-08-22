@@ -1,0 +1,21 @@
+Dim oMN As Object, oCst As Object
+Set oMN = CreateObject("Magnet.application")
+Set oCst = oMN.getConstants 'Get the Constants object
+
+oMN.Visible = True 'Make the MagNet window visible
+
+Call oMN.newDocument
+Dim Side
+Side = 10
+Call oMN.getDocument().getView().showGrid(True)
+Call oMN.getDocument().beginUndoGroup("Set Default Units", True)
+Call oMN.getDocument().setDefaultLengthUnit("Millimeters")
+Call oMN.getDocument().endUndoGroup
+Call oMN.getDocument().getView().newLine(-Side / 2, -Side / 2, -Side / 2, Side / 2)
+Call oMN.getDocument().getView().newLine(-Side / 2, Side / 2, Side / 2, Side / 2)
+Call oMN.getDocument().getView().newLine(Side / 2, Side / 2, Side / 2, -Side / 2)
+Call oMN.getDocument().getView().newLine(Side / 2, -Side / 2, -Side / 2, -Side / 2)
+Call oMN.getDocument().getView().selectAt(0, 0, infoSetSelection)
+ReDim ArrayOfValues(0)
+ArrayOfValues(0) = "Component#1"
+Call oMN.getDocument().getView().makeComponentInALine(1, ArrayOfValues, "Name=CR10: Cold rolled 1010 steel", infoMakeComponentUnionSurfaces Or infoMakeComponentRemoveVertices)
