@@ -1,7 +1,7 @@
 Scripts for generating the models and storing the results:
 
 
-  The excel sheet contains the original parameters and the results of simualting all the designs:
+  The excel sheet contains the original parameters and the results of simulating all the designs:
   
     Column1 to column 4 : force on stator at 0,5,10 and 15 degrees respectively , column 5 to column 8: force on rotor at 0,5,10 and 15 degrees respectively
     
