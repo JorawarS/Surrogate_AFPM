@@ -3,7 +3,7 @@ Scripts for generating the models and storing the results:
 
   The excel sheet contains the original parameters and the results of simulating all the designs:
   
-    Column1 to column 4 : force on stator at 0,5,10 and 15 degrees respectively , column 5 to column 8: force on rotor at 0,5,10 and 15 degrees respectively
+    Column1 to column 4 : torque on stator at 0,5,10 and 15 degrees respectively , column 5 to column 8: torque on rotor at 0,5,10 and 15 degrees respectively
     
     
   The visual basic files are the codes that run in the of the excel macro. Can also be accessed through the excel sheet. See manuals and tutorials folder for more info:
